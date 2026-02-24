@@ -1,0 +1,135 @@
+.home {
+  background: linear-gradient(145deg, #fff7ed 0%, #ffffff 55%, #ffedd5 100%);
+  border-radius: 18px;
+  padding: 48px 28px;
+  color: #7c2d12;
+  box-shadow: 0 12px 30px rgba(194, 65, 12, 0.16);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.hero h1 {
+  margin: 8px 0 4px;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero-photo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f97316;
+  box-shadow: 0 10px 24px rgba(194, 65, 12, 0.2);
+  flex-shrink: 0;
+}
+
+.hero h2 {
+  margin: 0;
+  font-weight: 500;
+  color: #ea580c;
+}
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f97316;
+  font-size: 0.8rem;
+}
+
+.summary {
+  max-width: 680px;
+  margin: 18px 0 0;
+  line-height: 1.65;
+  color: #9a3412;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.primary {
+  background: #ea580c;
+  color: #ffffff;
+}
+
+.secondary {
+  background: #ffffff;
+  border: 1px solid #fdba74;
+  color: #c2410c;
+}
+
+.highlights {
+  margin-top: 34px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.highlight-card {
+  background: #ffffff;
+  border: 1px solid #fdba74;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.value {
+  margin: 0;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.label {
+  margin: 6px 0 0;
+  color: #9a3412;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 32px 20px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo {
+    justify-content: flex-start;
+    order: -1;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+}

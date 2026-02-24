@@ -1,0 +1,26 @@
+<section class="home">
+  <div class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Welcome to My Portfolio</p>
+      <h1>{{ name }}</h1>
+      <h2>{{ role }}</h2>
+      <p class="summary">{{ summary }}</p>
+
+      <div class="actions">
+        <a class="btn primary" routerLink="/projects">View Projects</a>
+        <a class="btn secondary" routerLink="/about">About Me</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img class="profile-photo" src="/AAA.jpg" alt="Sai Ashritha profile photo" />
+    </div>
+  </div>
+
+  <div class="highlights">
+    <article class="highlight-card" *ngFor="let item of highlights">
+      <p class="value">{{ item.value }}</p>
+      <p class="label">{{ item.label }}</p>
+    </article>
+  </div>
+</section>

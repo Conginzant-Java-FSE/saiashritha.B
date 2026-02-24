@@ -1,0 +1,42 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(194, 65, 12, 0.12);
+  border-top: 4px solid #f97316;
+  color: #7c2d12;
+}
+
+.project-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.project {
+  border: 1px solid #fdba74;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fff7ed;
+}
+
+.skills-title {
+  margin: 8px 0 10px;
+  font-weight: 600;
+  color: #9a3412;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-pill {
+  background: #f97316;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}

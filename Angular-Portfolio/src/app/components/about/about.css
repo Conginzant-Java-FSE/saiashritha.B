@@ -1,0 +1,22 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(194, 65, 12, 0.12);
+  border-top: 4px solid #f97316;
+  color: #7c2d12;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #ea580c;
+}
+
+ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}

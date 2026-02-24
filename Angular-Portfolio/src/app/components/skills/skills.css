@@ -1,0 +1,46 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(194, 65, 12, 0.12);
+  border-top: 4px solid #f97316;
+  color: #7c2d12;
+}
+
+.skill-list {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.skill-item {
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-name {
+  color: #9a3412;
+  font-weight: 600;
+}
+
+.skill-level {
+  background: #f97316;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .skill-list {
+    grid-template-columns: 1fr;
+  }
+}

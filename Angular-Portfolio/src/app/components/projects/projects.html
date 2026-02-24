@@ -1,0 +1,14 @@
+<section class="card">
+  <h2>Projects</h2>
+  <div class="project-list">
+    <article class="project" *ngFor="let project of projects">
+      <h3>{{ project.name }}</h3>
+      <p class="skills-title">Skills Used</p>
+      <div class="skills-list">
+        <span class="skill-pill" *ngFor="let skill of project.skills">
+          {{ skill.name }} ({{ skill.level }})
+        </span>
+      </div>
+    </article>
+  </div>
+</section>
